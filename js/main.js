@@ -27,7 +27,7 @@ let data = {
       amount: parseFloat(document.getElementById('amount').value), //сумма
       currency: 'RUB', //валюта
       accountId: document.getElementById('email').value, //идентификатор плательщика (необязательно)
-      email: document.getElementByID('email').value,
+      email: document.getElementById('email').value,
       data: data
     }, {
       onSuccess: function(options) { // success
