@@ -1,6 +1,9 @@
 //let btn = document.getElementById("button")
 let language = "ru-RU"
+window.onload function(){
 let btn = document.getElementById("button")
+btn.addEventListener('click', pay)
+}
 
 function pay() {
   var widget = new cp.CloudPayments({
@@ -31,5 +34,4 @@ function pay() {
 //window.addEventListener('load', pay)
 
     
-btn.addEventListener('click', pay)
 
