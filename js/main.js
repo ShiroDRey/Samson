@@ -23,7 +23,7 @@ let data = {
   widget.pay('auth', // или 'charge'
     { //options
       publicId: 'pk_36321942fc3d1ade1ea0804adcf77', //id из личного кабинета
-      description: document.getElementById(description).value, //назначение
+      description: document.getElementById(description), //назначение
       amount: parseFloat(document.getElementById(amount).value), //сумма
       currency: 'RUB', //валюта
       accountId: document.getElementById(email).value, //идентификатор плательщика (необязательно)
