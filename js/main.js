@@ -14,7 +14,7 @@ function pay() {
       description: document.getElementById(description), //назначение
       amount: parseFloat(document.getElementById(amount)), //сумма
       currency: 'RUB', //валюта
-      accountId: document.getElementById(email), //идентификатор плательщика (необязательно)
+      accountId: document.getElementById(email) //идентификатор плательщика (необязательно)
     }, {
       onSuccess: function(options) { // success
         //действие при успешной оплате
@@ -29,6 +29,6 @@ function pay() {
   )
 }
 
-window.addEventListener('load', pay)
+
 btn.addEventListener('click', pay)
 
