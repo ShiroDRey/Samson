@@ -8,7 +8,7 @@ function pay() {
 let data = {
         firstName: document.getElementById('firstname').value,
         lastName: document.getElementById('lastname').value,
-        phone: document.getElementById('phone').value
+        phone: document.getElementById('phonenumber').value
     }
 
     let recurrent = document.getElementById('recurrent')
